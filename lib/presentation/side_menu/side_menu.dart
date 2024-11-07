@@ -6,8 +6,7 @@ import 'package:routemaster/routemaster.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 import '../../auth/blocs/authentication_bloc/authentication_bloc.dart';
-import '../../auth/blocs/sign_in_bloc/sign_in_bloc.dart';
-import '../../auth/blocs/sign_in_bloc/sign_in_event.dart';
+
 
 
 
@@ -117,6 +116,11 @@ class _SideMenuState extends State<SideMenu> with AutomaticKeepAliveClientMixin 
       NavigationLink(
         title: 'Parents'.tr(),
         path: '/parents',
+        inDrawer: widget.inDrawer,
+      ),
+      NavigationLink(
+        title: 'Attendance'.tr(),
+        path: '/attendance',
         inDrawer: widget.inDrawer,
       ),
 

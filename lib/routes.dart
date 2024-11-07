@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:graduation_yamen_afmin/presentation/attendance/view/attendance_screen.dart';
 import 'package:graduation_yamen_afmin/presentation/parents/view/parent_screen.dart';
 import 'package:graduation_yamen_afmin/presentation/students/view/student_screen.dart';
 import 'package:graduation_yamen_afmin/presentation/teacher/view/teacher_screen.dart';
@@ -28,6 +29,10 @@ getRoutesAdmin() {
         child: PageScaffold(
             body: ParentListScreen(),
             title: "Parents")),
+    '/attendance': (route) =>    const NoAnimationPage(
+        child: PageScaffold(
+            body: SimplifiedAttendanceListScreen(),
+            title: "Attendance")),
 
 
 
