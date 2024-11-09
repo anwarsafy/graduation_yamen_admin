@@ -123,6 +123,16 @@ class _SideMenuState extends State<SideMenu> with AutomaticKeepAliveClientMixin 
         path: '/attendance',
         inDrawer: widget.inDrawer,
       ),
+      NavigationLink(
+        title: 'Notes'.tr(),
+        path: '/notes',
+        inDrawer: widget.inDrawer,
+      ),
+      NavigationLink(
+        title: 'Tasks'.tr(),
+        path: '/tasks',
+        inDrawer: widget.inDrawer,
+      ),
 
     ];
   }
