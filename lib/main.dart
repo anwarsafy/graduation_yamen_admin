@@ -101,7 +101,7 @@ class AppView extends StatelessWidget {
       builder: (context, state) {
         return MaterialApp.router(
           debugShowCheckedModeBanner: false,
-          title: 'Admin Panel',
+          title: 'SFS',
           theme: AppTheme.lightTheme(context),
           darkTheme: AppTheme.darkTheme(context),
           themeMode: themeMode,
